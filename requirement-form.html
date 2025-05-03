@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>INSERT PLACING EOAT Requirement Form</title>
+</head>
+<body>
+  <h1>INSERT PLACING EOAT Requirement Form</h1>
+  <form action="/submit-requirements" method="POST">
+    
+    <!-- Project & Customer Info -->
+    <label for="projectName">
+      Project Name:
+      <input type="text" id="projectName" name="projectName" required />
+    </label>
+    <br /><br />
+    
+    <label for="projectOwner">
+      Project Owner:
+      <input type="text" id="projectOwner" name="projectOwner" required />
+    </label>
+    <br /><br />
+    
+    <label for="customerName">
+      Customer Name:
+      <input type="text" id="customerName" name="customerName" required />
+    </label>
+    <br /><br />
+
+    <!-- 1) Requirement -->
+    <fieldset>
+      <legend>1) Requirement (select all that apply)</legend>
+      <label>
+        <input type="checkbox" name="requirements" value="Part Picking" />
+        Part Picking
+      </label><br/>
+      <label>
+        <input type="checkbox" name="requirements" value="Gate Cutting" />
+        Gate Cutting
+      </label><br/>
+      <label>
+        <input type="checkbox" name="requirements" value="Runner Picking" />
+        Runner Picking
+      </label><br/>
+      <label>
+        <input type="checkbox" name="requirements" value="Insert Picking" />
+        Insert Picking
+      </label><br/>
+      <label>
+        <input type="checkbox" name="requirements" value="Fixture Requirement" />
+        Fixture Requirement
+      </label>
+    </fieldset>
+    <br/>
+
+    <!-- 2) Part Picking Information -->
+    <fieldset>
+      <legend>2) Part Picking Information</legend>
+      <label for="material">
+        1. Material:
+        <input type="text" id="material" name="material" />
+      </label>
+      <br /><br />
+
+      <label for="partTemp">
+        2. Part temp. during ejection:
+        <input type="text" id="partTemp" name="partTemp" />
+      </label>
+      <br /><br />
+
+      <label for="numCavities">
+        3. Number of cavities:
+        <input type="number" id="numCavities" name="numCavities" />
+      </label>
+      <br /><br />
+
+      <label for="pickingFrom">
+        4. Part picking from:
+        <input type="text" id="pickingFrom" name="pickingFrom" />
+      </label>
+      <br /><br />
+
+      <label for="partCatching">
+        5. Part catching:
+        <input type="text" id="partCatching" name="partCatching" />
+      </label>
+      <br /><br />
+
+      <label for="pickingConfirmation">
+        6. Part picking confirmation:
+        <input type="text" id="pickingConfirmation" name="pickingConfirmation" />
+      </label>
+      <br /><br />
+
+      <label for="partSurface">
+        7. Part surface:
+        <input type="text" id="partSurface" name="partSurface" />
+      </label>
+      <br /><br />
+
+      <label for="runnerPresent">
+        8. Runner present:
+        <input type="text" id="runnerPresent" name="runnerPresent" />
+      </label>
+      <br /><br />
+
+      <label for="numRunner">
+        9. Number of Runner:
+        <input type="number" id="numRunner" name="numRunner" />
+      </label>
+      <br /><br />
+
+      <label for="runnerConfirmation">
+        10. Runner picking confirmation:
+        <input type="text" id="runnerConfirmation" name="runnerConfirmation" />
+      </label>
+      <br /><br />
+
+      <label for="numInserts">
+        11. No. of inserts:
+        <input type="number" id="numInserts" name="numInserts" />
+      </label>
+      <br /><br />
+
+      <label for="insertPlacing">
+        12. Insert placing:
+        <input type="text" id="insertPlacing" name="insertPlacing" />
+      </label>
+      <br /><br />
+
+      <label for="insertType">
+        13. Type of insert:
+        <input type="text" id="insertType" name="insertType" />
+      </label>
+      <br /><br />
+
+      <label for="insertMaterial">
+        14. Insert material:
+        <input type="text" id="insertMaterial" name="insertMaterial" />
+      </label>
+      <br /><br />
+
+      <label for="insertConfirm">
+        15. Insert placing confirmation:
+        <input type="text" id="insertConfirm" name="insertConfirm" />
+      </label>
+      <br /><br />
+
+      <label for="eoatType">
+        16. EOAT Type:
+        <input type="text" id="eoatType" name="eoatType" />
+      </label>
+      <br /><br />
+
+      <label for="qcc">
+        17. QCC:
+        <input type="text" id="qcc" name="qcc" />
+      </label>
+      <br /><br />
+
+      <label for="grippingType">
+        18. Gripping Type:
+        <input type="text" id="grippingType" name="grippingType" />
+      </label>
+      <br /><br />
+    </fieldset>
+    <br/>
+
+    <!-- 3) Robot Information -->
+    <fieldset>
+      <legend>3) Robot Information</legend>
+      <label for="robotModel">
+        1. Robot model/make:
+        <input type="text" id="robotModel" name="robotModel" />
+      </label>
+      <br /><br />
+
+      <label for="robotType">
+        2. Robot type:
+        <input type="text" id="robotType" name="robotType" />
+      </label>
+      <br /><br />
+
+      <label for="robotEntry">
+        3. Robot entry:
+        <input type="text" id="robotEntry" name="robotEntry" />
+      </label>
+      <br /><br />
+
+      <label for="robotAxis">
+        4. Robot Axis:
+        <input type="text" id="robotAxis" name="robotAxis" />
+      </label>
+      <br /><br />
+
+      <label for="payload">
+        5. Robot payload capacity:
+        <input type="text" id="payload" name="payload" />
+      </label>
+      <br /><br />
+
+      <label for="signaling">
+        6. Signaling:
+        <input type="text" id="signaling" name="signaling" />
+      </label>
+      <br /><br />
+
+      <label for="robotSide">
+        7. Robot side:
+        <input type="text" id="robotSide" name="robotSide" />
+      </label>
+      <br /><br />
+
+      <label for="strokeLimit">
+        8. Robot stroke limit:
+        <input type="text" id="strokeLimit" name="strokeLimit" />
+      </label>
+      <br /><br />
+
+      <label for="gripperCircuits">
+        9. Number of gripper circuits:
+        <input type="number" id="gripperCircuits" name="gripperCircuits" />
+      </label>
+      <br /><br />
+
+      <label for="vacuumCircuits">
+        10. Number of vacuum circuits:
+        <input type="number" id="vacuumCircuits" name="vacuumCircuits" />
+      </label>
+      <br /><br />
+
+      <label for="vacuumPipeSize">
+        11. Vacuum pipe size:
+        <input type="text" id="vacuumPipeSize" name="vacuumPipeSize" />
+      </label>
+      <br /><br />
+
+      <label for="gripperPipeSize">
+        12. Gripper pipe size:
+        <input type="text" id="gripperPipeSize" name="gripperPipeSize" />
+      </label>
+      <br /><br />
+
+      <label for="pipeIndication">
+        13. Requirement of pipe indication:
+        <input type="text" id="pipeIndication" name="pipeIndication" />
+      </label>
+      <br /><br />
+    </fieldset>
+    <br/>
+
+    <!-- 4) Mold Information -->
+    <fieldset>
+      <legend>4) Mold Information</legend>
+      <label for="cycleTime">
+        1. Cycle time:
+        <input type="text" id="cycleTime" name="cycleTime" />
+      </label>
+      <br /><br />
+      <label for="moldType">
+        2. Type of mold:
+        <input type="text" id="moldType" name="moldType" />
+      </label>
+      <br /><br />
+    </fieldset>
+    <br/>
+
+    <!-- 5) Gate Cutting -->
+    <fieldset>
+      <legend>5) Gate Cutting</legend>
+      <label for="operation">
+        1. Operation:
+        <input type="text" id="operation" name="operation" />
+      </label>
+      <br /><br />
+      <label for="nipperType">
+        2. Type of nipper:
+        <input type="text" id="nipperType" name="nipperType" />
+      </label>
+      <br /><br />
+    </fieldset>
+    <br/>
+
+    <!-- 6) Fixture -->
+    <fieldset>
+      <legend>6) Fixture</legend>
+      <label for="fixtureOrient">
+        1. Fixture orientation:
+        <input type="text" id="fixtureOrient" name="fixtureOrient" />
+      </label>
+      <br /><br />
+      <label for="stationMounting">
+        2. Station Mounting:
+        <input type="text" id="stationMounting" name="stationMounting" />
+      </label>
+      <br /><br />
+      <label for="fixtureConfirm">
+        3. Insert placing confirmation on fixture:
+        <input type="text" id="fixtureConfirm" name="fixtureConfirm" />
+      </label>
+      <br /><br />
+      <label for="insertLoad">
+        4. Insert load by Operator:
+        <input type="text" id="insertLoad" name="insertLoad" />
+      </label>
+      <br /><br />
+      <label for="bowlFeeder">
+        5. Bowl feeder:
+        <input type="text" id="bowlFeeder" name="bowlFeeder" />
+      </label>
+      <br /><br />
+    </fieldset>
+    <br/>
+
+    <!-- 7) Reference Data -->
+    <fieldset>
+      <legend>7) Reference Data</legend>
+      <textarea id="referenceData" name="referenceData" rows="4" cols="50"
+        placeholder="Any drawings, STL files or external references…"></textarea>
+    </fieldset>
+    <br/>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
